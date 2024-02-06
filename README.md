@@ -5,5 +5,7 @@ A repository to replace the physical lab notebook for ECE445.
 
 ### Team Members
 Lucas Duduit
+\
 T'Andra Newby
+\
 Kevin Shi
