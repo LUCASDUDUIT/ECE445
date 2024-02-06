@@ -1,5 +1,9 @@
-# ECE445
+# ECE445 
 A repository to replace the physical lab notebook for ECE445.
 
-**bold**
-## Header 2
+## Project Title: **Sturdy Smart Feeder**
+
+### Team Members
+Lucas Duduit
+T'Andra Newby
+Kevin Shi
