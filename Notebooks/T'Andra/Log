@@ -17,3 +17,22 @@
 · (8) two resistors
 2/20/24
   rubric for proposal and things we should change
+ -  try to make high level requirements more testable.
+    - specifu how far the rfid has to be for reciprical to open 
+    - specify which rfid to use, bandwidth
+
+- be quantitative with how much food is dispensed
+- depending on how much the battery is at currently, when does the solar power begin to charge the batter?
+
+block diagram
+- specify pins thats used on micro controller
+- reciprocal should be under food container 
+- what solar panel is being used? and how much energy is being dispensed
+- what communication is being used (bluetooth, wifi)
+- specify voltage on arrows
+
+subsystems
+- be specific on requirements, mentioning measurements, 
+- the motor will be running based on time, how much food should be dispensed by that time?
+spring 2023 project 40, rfid door lock
+
