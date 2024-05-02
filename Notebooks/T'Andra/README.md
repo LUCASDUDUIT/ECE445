@@ -11,7 +11,7 @@ This week's notes consist of possible materials for dog feeder as we brainstorm 
   * Grove - 125KHz RFID Reader
   *  two resistors
   *  Rotary encoder
-     ![sketch of dog feeder functionality](https://github.com/LUCASDUDUIT/ECE445/blob/temp/Notebooks/T'Andra/Screenshot%202024-05-02%20125332.png)
+     ![sketch of dog feeder functionality](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20125332.png)
   * some datasheets:
      *  [Transmitter](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Transmitter%20TX118SA_DATASHEET.pdf)
      *  [Stepper Controller](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Motor_DriverL298N.pdf)
@@ -40,12 +40,12 @@ This week's objective is to complete the design review and record feedback from 
      * the motor will be running based on time, how much food 
        should be dispensed by that time?
      * Refer to spring 2023 project 40, rfid door lock
-      ![original block diagram](https://github.com/LUCASDUDUIT/ECE445/blob/temp/Notebooks/T'Andra/Screenshot%202024-05-02%20125406.png)
+      ![original block diagram](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20125406.png)
        
 ## WEEK 2/26/24
 This week's objective is to prepare for the design review and work on design the PCB based on our schematic. I contributed to creating the rfid module, which was later revised by another teammate.
-*	![transmitter](https://github.com/LUCASDUDUIT/ECE445/blob/3981d06701164bb2d5e603707d426fcbb482b651/Notebooks/T'Andra/Screenshot%202024-05-02%20122007.png)	
-* ![receiver](https://github.com/LUCASDUDUIT/ECE445/blob/3981d06701164bb2d5e603707d426fcbb482b651/Notebooks/T'Andra/Screenshot%202024-05-02%20122015.png)	
+*	![transmitter](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20122007.png)	
+* ![receiver](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20122015.png)	
 
 ## WEEK 3/4/24
 This week's objective is to work on the team evaluation assignment. By this point, out team has specified what tasks we will partake in. My responsibility will be programming the dog feeder based on the skills I have learned. 
@@ -58,7 +58,7 @@ This week's objective is to work on the team evaluation assignment. By this poin
 This week's objective is to start building the program for the dog feeder. We have not completed an official design of our PCB, so I received a stm32nucleo to practice programming for our stm32f205rct7 mcu. I have also taken notes on feedback from the TA regarding out design document.
 * I will use stm32duino application to program our pcb and the stm32nucleo devboard
 * Objective is to initialize the base of the functionality: pins, RTC, and memory.
-* ![image](https://github.com/LUCASDUDUIT/ECE445/blob/temp/Notebooks/T'Andra/Screenshot%202024-05-02%20142338.png)
+* ![image](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20142338.png)
 * Improvements:
     * rv table should suffice for all subsystems
        * elaborate/explain results in rv 
@@ -73,8 +73,8 @@ This week's objective is to complete the individual progress report and continue
 
 * After some research and YouTube videos, I have written code for the NEMA 17 stepper motor, DC. waiting to receive the components to test these.
 
-* ![stepper](https://github.com/LUCASDUDUIT/ECE445/blob/3981d06701164bb2d5e603707d426fcbb482b651/Notebooks/T'Andra/Screenshot%202024-05-02%20122703.png)
-* ![dc_motor](https://github.com/LUCASDUDUIT/ECE445/blob/3981d06701164bb2d5e603707d426fcbb482b651/Notebooks/T'Andra/Screenshot%202024-05-02%20122721.png)
+* ![stepper](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20122703.png)
+* ![dc_motor](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20122721.png)
 
 ## WEEK 4/1/24
 This week's objective is to continue programming the dog feeder, implementing the IR sensors, OLED, and rotary encoder.
@@ -86,24 +86,24 @@ With some help and research, I created base code for our ssd1306 OLED, rotary en
 This week's objective is to prepare for the mock demonstration and continue programming the dog feeder via stm32cubeide.
 * The TA advised that since we don't have our PCB in yet, we should show something else physically worked on such as a breadboard with our intended circuit, and preferably the structural aspect of the dog feeder.
 * I implemented base code for the last components in our design, the rfid and the infrared emitters and detectors.
-* ![IR CODE](https://github.com/LUCASDUDUIT/ECE445/blob/3981d06701164bb2d5e603707d426fcbb482b651/Notebooks/T'Andra/Screenshot%202024-05-02%20122509.png)
-* ![IR_INITIALIZE](https://github.com/LUCASDUDUIT/ECE445/blob/3981d06701164bb2d5e603707d426fcbb482b651/Notebooks/T'Andra/Screenshot%202024-05-02%20122149.png)
+* ![IR CODE](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20122509.png)
+* ![IR_INITIALIZE](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20122149.png)
 * The rfid uses UART2 communication. The HAL_UART2_Transmit function is supposed to transmit a signal of a string "range" from the dog feeder to the dog collar. And the feeder uses HAL_UART2_Receive function to receive the string signal " open" from the dog collar to open the dog feeder.
 
 ## WEEK 4/15/24
 This week's objective is to test the code of each integral since we have received all of the parts. Once they work, integrate them into each other.
 
 * Stepper motor did not work, had to use a stepper.h/.c library that similar to the Arduino library due to the certain sequences of bits applied to each pin of the stepper motor controller. stepper works now.
-* ![stepper motor video](https://github.com/LUCASDUDUIT/ECE445/blob/temp/Notebooks/T'Andra/20240417_081609%20(1).mp4)
+* ![stepper motor video](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/20240417_081609%20(1).mp4)
     * Warning: the video must be downloaded to view the video
 oled did not seems to work using u82g library, so I switched to a fonts.h/.c and ssd1306.h/.c files. those functions worked.
-    * ![image](https://github.com/LUCASDUDUIT/ECE445/blob/temp/Notebooks/T'Andra/Screenshot%202024-05-02%20142747.png)
+    * ![image](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20142747.png)
 * Rotary encoder and select button worked. Rotary encoder had some glitches when incrementing and decrementing. So we will just increment and loop back around when selection options.
-    * ![rotary encoder video](https://github.com/LUCASDUDUIT/ECE445/blob/temp/Notebooks/T'Andra/20240418_155050.mp4)
+    * ![rotary encoder video](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/20240418_155050.mp4)
 * Dc motor worked as it was just writing the output pin to 1 to run the motor. 
     * Warning: the video must be downloaded to view the video
 * In all, the user interface high level requirement has been fulfilled. The dispensing has slightly been fulfilled as I have not tested the IR sensors. 
-    * ![user interface video](https://github.com/LUCASDUDUIT/ECE445/blob/temp/Notebooks/T'Andra/Snapchat-437174761%20(1).mp4)
+    * ![user interface video](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Snapchat-437174761%20(1).mp4)
         * Warning: the video must be downloaded to view the video
 
 ## WEEK 4/22/24
@@ -123,5 +123,5 @@ This week's objective is to present our improved slides from the mock presentati
 * Update: I received a temporary laptop from a family member, so I will have to download the project, application, and rerun it to the stm32nucleo devboard.
      * There were some errors that were fixed. However, the dog feeder's door did not open due to lack of friction to keep the lid up after opening. This was the final result before demoing.
 
-![flow chat for code](https://github.com/LUCASDUDUIT/ECE445/blob/temp/Notebooks/T'Andra/Screenshot%202024-05-02%20125418.png)
+![flow chat for code](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20125418.png)
 
