@@ -26,7 +26,7 @@ This week's objective is to complete the design review and record feedback from 
          open 
          * specify which rfid to use, bandwidth
        * be quantitative with how much food is dispensed
-       *depending on how much the battery is at currently, 
+       * depending on how much the battery is at currently, 
          when does the solar power begin to charge the 
          battery?
   * block diagram:
