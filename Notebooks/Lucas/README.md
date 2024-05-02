@@ -1,6 +1,14 @@
 # WEEKLY LOG
 ## WEEK 2/05
 **DUE:** PROPOSAL, TEAM CONTRACT
+Submitted the propsoal the week before the deadline in order to get the early project approval extra credit. The specifications of the dog feeder are
+
+Scheduled feeding times and amount.
+Active weighing to monitor pet's eating habits; While also not allowing continued dispensing resulting in overfill.
+RFID proximity access to only permit the pet to eat from reciprocal.
+Solar powered with internal battery bank
+User notifying system for low feed reservoir or low/loss of power
+Tracking feeding paterns to alert owner of illness or loss of appetite
 
 ## WEEK 2/12
 **DUE:** N/A
