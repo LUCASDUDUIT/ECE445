@@ -59,6 +59,7 @@
 - Established RFID collar to feeder communication via Arduino.
 - Developed firmware for the RFID collar module, including pairing and authentication routines.
 - Tested and verified RFID communication between the collar and the feeder prototype.
+- Developed a user interface for configuring feeding schedules and portions.
 
 ## WEEK 4/15 **DUE:** MOCK DEMO
 - Cutting out sheet metal segments for the enclosure.
@@ -82,13 +83,8 @@
 - Compiled and submitted final project reports and documentation.
 
 Additional tasks and events:
-
-- Researched and implemented power management strategies for efficient battery usage.
-- Developed a user interface for configuring feeding schedules and portions.
-- Integrated weight sensors and implemented algorithms for monitoring pet eating habits.
 - Conducted extensive testing and debugging of the integrated system.
-- Documented the project extensively, including design decisions, code documentation, and user manuals.
-- Prepared a project poster and demonstration video for the final showcase.
-- Conducted peer reviews and provided feedback on other team projects.
+- Documented the project extensively, including design decisions via the various reports, and code documentation.
+- Conducted peer reviews and provided feedback on other team projects:  peer design review, peer demo, peer presentation
 - Participated in group discussions and brainstorming sessions to address challenges and explore new ideas.
 - Collaborated with team members, delegated tasks, and ensured effective communication throughout the project.
