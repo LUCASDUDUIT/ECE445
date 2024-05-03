@@ -56,7 +56,7 @@
 - Performed final design checks and made necessary modifications.
 - Submitted PCB manufacturing files to the fabrication service.
 -Bought trashcan for the housing of the dogfeeder.
-
+<img src="IMG_0282.PNG" width="50%">
 
 ## WEEK 4/08 **DUE:** N/A
 - Established RFID collar to feeder communication via Arduino.
