@@ -1,0 +1,40 @@
+// Include libraries
+#include <RH_ASK.h>
+#include <SPI.h>
+
+// Msg 1 size expected
+const byte tamMsg1 = 5;
+
+
+// Crear ASK object  (Tx 12 & Rx 11)
+RH_ASK driver;
+
+void setup() {
+  Serial.begin(9600);
+  // Initialize object
+  driver.init();
+}
+
+void loop() {
+  // Receive msj from Board 1
+  uint8_t msg1[tamMsg1];
+  uint8_t msg1Len = sizeof(msg1);
+  if (driver.recv(msg1, &msg1Len)){
+    Serial.print("Msg received: ");
+    Serial.println((char *)msg1);
+
+    // Send msg to Board 1
+    const char *msg2 = "OPEN";
+    int t = 0;
+    while (t<5){
+      driver.send((uint8_t *)msg2, strlen(msg2));
+      driver.waitPacketSent();
+      t++;
+      delay(100/2);
+    }
+    Serial.print("Msg sent: ");
+    Serial.println(msg2);
+
+    delay(200/2);
+  }
+}
