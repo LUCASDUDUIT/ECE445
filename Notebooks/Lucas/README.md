@@ -50,16 +50,19 @@
 - Received feedback and suggestions for improvement.
 - Addressed any comments or revisions required for the design document regrade.
 
+
 ## WEEK 4/01 **DUE:** N/A
 - PCB design was finalized and sent in for 4th Wave Order.
 - Performed final design checks and made necessary modifications.
 - Submitted PCB manufacturing files to the fabrication service.
-
+-Bought trashcan for the housing of the dogfeeder.
+![Alt Text](IMG_0282.PNG)
 ## WEEK 4/08 **DUE:** N/A
 - Established RFID collar to feeder communication via Arduino.
 - Developed firmware for the RFID collar module, including pairing and authentication routines.
 - Tested and verified RFID communication between the collar and the feeder prototype.
 - Developed a user interface for configuring feeding schedules and portions.
+
 
 ## WEEK 4/15 **DUE:** MOCK DEMO
 - Cutting out sheet metal segments for the enclosure.
