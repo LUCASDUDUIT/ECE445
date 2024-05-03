@@ -99,7 +99,7 @@
 - Re-demo was conducted, verifying programmable UI requirement and RFID communication.
 - Compiled and submitted final project reports and documentation.
 
-- 
+
 Additional tasks and events:
 - Conducted extensive testing and debugging of the integrated system.
 - Documented the project extensively, including design decisions via the various reports, and code documentation.
