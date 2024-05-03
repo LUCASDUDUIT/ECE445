@@ -91,7 +91,7 @@
 - Conducted final system testing and debugging.
 - 10-15 minutes before the demo, a 12V line contacted the 3.3V bus and fried the Dev Board, transmitter, receiver modules, an Arduino, and T'Andra's computer.
 - Attempted to recover and prepare a backup system for the demo.
-<img src="IMG_2220.jpg.jpg" width="50%">
+<img src="IMG_2220.jpg" width="50%">
 
 ## WEEK 4/29 **DUE:** FINAL PRESENTATION, FINAL PAPERS
 - Presentation slides were made.
