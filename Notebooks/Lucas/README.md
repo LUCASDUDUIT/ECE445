@@ -6,7 +6,10 @@
 - Worked on proposal.
 - Conducted research on similar existing products and their features.
 - Brainstormed additional features and functionalities.
-- Assigned tasks and responsibilities to team members.
+- Created scetches for the feeder: 
+<img src="IMG_0283.PNG" width="50%">
+<img src="IMG_0284.PNG" width="50%">
+
 
 ## WEEK 2/12 **DUE:** N/A
 - Sourced all the datasheets for all the components to support the peripherals for high-level requirements to be obtained. This included the 13.56 MHz transceiver modules, the STM32 MCU, the Stepper motor, the DC geared motor, DC-DC 12/5 V converter, the LDOs, the OLED, ROTARY ENCODER, and battery.
@@ -44,18 +47,19 @@
 - Tested and debugged RFID communication on a development board.
 - Implemented stepper motor control algorithms and verified functionality.
 
+
 ## WEEK 3/25 **DUE:** IPR and DESIGN DOC REGRADE
 - Conducted an in-progress review (IPR) with the faculty advisor.
 - Presented the current project status, challenges faced, and future plans.
 - Received feedback and suggestions for improvement.
 - Addressed any comments or revisions required for the design document regrade.
 
-
 ## WEEK 4/01 **DUE:** N/A
 - PCB design was finalized and sent in for 4th Wave Order.
 - Performed final design checks and made necessary modifications.
 - Submitted PCB manufacturing files to the fabrication service.
 -Bought trashcan for the housing of the dogfeeder.
+
 <img src="IMG_0282.PNG" width="50%">
 
 ## WEEK 4/08 **DUE:** N/A
@@ -64,6 +68,7 @@
 - Tested and verified RFID communication between the collar and the feeder prototype.
 - Developed a user interface for configuring feeding schedules and portions.
 
+<img src="IMG_2213.jpg" width="50%">
 
 ## WEEK 4/15 **DUE:** MOCK DEMO
 - Cutting out sheet metal segments for the enclosure.
@@ -73,19 +78,24 @@
 - Mounting Stepper motor to the food bowl door mechanism.
 - Conducted a mock demo to showcase the current progress and functionality.
 
+<img src="IMG_2221.jpg" width="50%">
+
+
+
 ## WEEK 4/22 **DUE:** FINAL DEMO
 - Verified solar power requirement.
 - Integrated solar panel and battery management system.
 - Conducted final system testing and debugging.
 - 10-15 minutes before the demo, a 12V line contacted the 3.3V bus and fried the Dev Board, transmitter, receiver modules, an Arduino, and T'Andra's computer.
 - Attempted to recover and prepare a backup system for the demo.
+<img src="IMG_2220.jpg.jpg" width="50%">
 
 ## WEEK 4/29 **DUE:** FINAL PRESENTATION, FINAL PAPERS
 - Presentation slides were made.
 - Final presentation was given to the faculty and peers.
 - Re-demo was conducted, verifying programmable UI requirement and RFID communication.
 - Compiled and submitted final project reports and documentation.
-
+<img src="IMG_2213.jpg" width="50%">
 Additional tasks and events:
 - Conducted extensive testing and debugging of the integrated system.
 - Documented the project extensively, including design decisions via the various reports, and code documentation.
