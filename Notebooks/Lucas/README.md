@@ -98,7 +98,8 @@
 - Final presentation was given to the faculty and peers.
 - Re-demo was conducted, verifying programmable UI requirement and RFID communication.
 - Compiled and submitted final project reports and documentation.
-<img src="IMG_2213.jpg" width="50%">
+
+- 
 Additional tasks and events:
 - Conducted extensive testing and debugging of the integrated system.
 - Documented the project extensively, including design decisions via the various reports, and code documentation.
