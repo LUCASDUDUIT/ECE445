@@ -103,7 +103,7 @@ oled did not seems to work using u82g library, so I switched to a fonts.h/.c and
          * Warning: the video must be downloaded to view the video
 * Dc motor worked as it was just writing the output pin to 1 to run the motor. 
 * In all, the user interface high level requirement has been fulfilled. The dispensing has slightly been fulfilled as I have not tested the IR sensors.
-    * ![user interface] (https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/IMG_2213.jpg)
+  * ![user interface](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/IMG_2213.jpg)
     * ![user interface video](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Snapchat-437174761%20(1).mp4)
         * Warning: the video must be downloaded to view the video
 
