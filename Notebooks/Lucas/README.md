@@ -31,6 +31,8 @@
 - Received feedback and suggestions for improvements.
 - Began PCB layout and routing based on the finalized schematic.
 
+<img src="Screenshot 2024-05-02 214413.png" width="50%">
+
 ## WEEK 3/04 **DUE:** TEAMWORK EVALUATION
 - More work on PCB was conducted.
 - Continued PCB layout and routing.
@@ -46,7 +48,8 @@
 - Developed firmware for the microcontroller, including RFID reader integration and motor control routines.
 - Tested and debugged RFID communication on a development board.
 - Implemented stepper motor control algorithms and verified functionality.
-
+-Decision was made to change the housing of the feeder from a self built sheet metal box to a trash can. 
+<img src="IMG_0282.PNG" width="50%">
 
 ## WEEK 3/25 **DUE:** IPR and DESIGN DOC REGRADE
 - Conducted an in-progress review (IPR) with the faculty advisor.
@@ -58,9 +61,9 @@
 - PCB design was finalized and sent in for 4th Wave Order.
 - Performed final design checks and made necessary modifications.
 - Submitted PCB manufacturing files to the fabrication service.
--Bought trashcan for the housing of the dogfeeder.
 
-<img src="IMG_0282.PNG" width="50%">
+<img src="Screenshot 2024-04-30 at 11.27.07 PM.png" width="50%">
+
 
 ## WEEK 4/08 **DUE:** N/A
 - Established RFID collar to feeder communication via Arduino.
