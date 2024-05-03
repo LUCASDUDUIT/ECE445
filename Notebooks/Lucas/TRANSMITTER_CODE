@@ -1,0 +1,61 @@
+// Include libraries 
+#include <RH_ASK.h>
+#include <SPI.h>
+
+const int FEED_TIME = 2;
+const int OPEN_LID = 3;
+
+// Msg 2 size expected
+const byte tamMsg2 = 4;
+
+// Create ASK objects (Tx on pin 12 & Rx on pin 11)
+RH_ASK driver;
+
+void setup() {
+Serial.begin(9600);
+// Initialize object
+driver.init();
+pinMode(FEED_TIME, INPUT);
+pinMode(OPEN_LID, OUTPUT);
+digitalWrite(OPEN_LID, LOW);
+
+}
+
+void loop() {
+if(digitalRead(FEED_TIME)){ //pin is high from stm 32 for feeding time
+// Send message
+const char *msg1 = "RANGE\n";
+driver.send((uint8_t *)msg1, strlen(msg1));
+driver.waitPacketSent();
+Serial.print("Msg sent: ");
+Serial.println(msg1);
+delay(50);
+
+// Receive msg from board 2
+uint8_t msg2[tamMsg2];
+uint8_t msg2Len = sizeof(msg2);
+
+bool listened = false;
+int t = 0;
+while ((! listened) && (t < 15)) {
+listened = driver.recv(msg2, &msg2Len);
+t ++;
+delay(50);
+}
+if (listened) {
+if(msg2[0] == 'O' && msg2[1] == 'P'){
+Serial.print("YAY\n");//set pin high for opening lid to stm32
+digitalWrite(OPEN_LID, HIGH);
+// delay(1000);//idk how long
+// digitalWrite(OPEN_LID, LOW);
+}
+delay(500);
+} else {
+Serial.print("NOTHING\n");
+digitalWrite(OPEN_LID, LOW);
+}
+}
+else{
+digitalWrite(OPEN_LID, LOW);
+}
+}
