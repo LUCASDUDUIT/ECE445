@@ -100,9 +100,10 @@ oled did not seems to work using u82g library, so I switched to a fonts.h/.c and
     * ![image](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Screenshot%202024-05-02%20142747.png)
 * Rotary encoder and select button worked. Rotary encoder had some glitches when incrementing and decrementing. So we will just increment and loop back around when selection options.
     * ![rotary encoder video](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/20240418_155050.mp4)
+         * Warning: the video must be downloaded to view the video
 * Dc motor worked as it was just writing the output pin to 1 to run the motor. 
-    * Warning: the video must be downloaded to view the video
-* In all, the user interface high level requirement has been fulfilled. The dispensing has slightly been fulfilled as I have not tested the IR sensors. 
+* In all, the user interface high level requirement has been fulfilled. The dispensing has slightly been fulfilled as I have not tested the IR sensors.
+    * ![user interface] ()
     * ![user interface video](https://github.com/LUCASDUDUIT/ECE445/blob/main/Notebooks/T'Andra/Snapchat-437174761%20(1).mp4)
         * Warning: the video must be downloaded to view the video
 
@@ -117,7 +118,7 @@ This week’s objective is to finish testing code and integrate them to fulfill 
      *  Therefore, we decided to use Arduino’s to communicate the two rfid modules. We would send a high from the dev board to one rfid module to start communicating with another and receive a high to the dev board once the other rfid module is in range, to open the dog feeder.
 
 * Everything seems to be working in terms of the programming. This could not be transferred over to our PCB due to time, and we also did not have the ST-LINK v2 programmer for our PCB. the finished project is uploaded to my notebook folder.
-* UPDATE: after rewiring the breadboard and Arduino board for a more pleasing visual, a teammate accidentally supplied 12v to a 5v power rail, which damaged an rfid module, an Arduino board, and my laptop. This occurred right before demo, so we were not able to present our functionality.
+* UPDATE: after rewiring the breadboard and Arduino board for a more pleasing visual, we accidentally supplied 12v to a 5v power rail, which damaged an rfid module, an Arduino board, and my laptop. This occurred right before demo, so we were not able to present our functionality.
 ## WEEK 4/29/24
 This week's objective is to present our improved slides from the mock presentation and attempt another demonstration as our previous one did not go as expected. 
 * Update: I received a temporary laptop from a family member, so I will have to download the project, application, and rerun it to the stm32nucleo devboard.
