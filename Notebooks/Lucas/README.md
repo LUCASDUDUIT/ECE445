@@ -11,7 +11,7 @@
 ## WEEK 2/12 **DUE:** N/A
 - Sourced all the datasheets for all the components to support the peripherals for high-level requirements to be obtained. This included the 13.56 MHz transceiver modules, the STM32 MCU, the Stepper motor, the DC geared motor, DC-DC 12/5 V converter, the LDOs, the OLED, ROTARY ENCODER, and battery.
 - Evaluated and compared different component options based on cost, availability, and specifications.
-- Ordered necessary components and development boards for prototyping.
+- Ordered necessary components and requested from 445 supply for Nucleo Board for prototyping.
 - Set up development environment and installed required software and toolchains.
 
 ## WEEK 2/19 **DUE:** DESIGN DOCUMENT, PROPOSAL REGRADE
